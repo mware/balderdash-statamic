@@ -1,0 +1,82 @@
+/* Block Editor styles */ 
+
+html {
+  color: var(--black);
+  font-family: var(--bodycopy);
+  font-size: var(--font-size-base);
+  font-weight: var(--regular);
+  line-height: 1.2;
+}
+
+.is-root-container {
+  max-width: 80vw;
+  min-width: 70vw;
+  margin-left: 2rem;
+
+  @include desktop {
+    max-width: 1200px;
+    min-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.acf-input,
+.acf-field {
+  
+  select,
+  textarea,
+  input[type="text"]  {
+    @include editor-inputs;
+    max-width: 800px;
+  }
+
+  label {
+    font-size: var(--font-size-base);
+    font-weight: var(--regular);
+    font-family: var(--bodycopy);
+    color: var(--black);
+  }
+
+  // some acf select boxes are very hard to style
+  .select2 {
+    max-width: 800px;
+    
+    .select2-selection {
+      @include editor-inputs;
+      height: auto !important;
+    }
+  }
+}
+
+.meta-box-sortables select {
+  max-width: auto !important;
+}
+
+.wp-editor-container iframe {
+  padding: 2rem;
+}
+
+.edit-post-visual-editor__post-title-wrapper {
+  max-width: 1000px;
+  margin-left: 4rem;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  font-family: var(--bodycopy);
+  font-weight: var(--regular);
+  font-size: var(--font-size-xxl)arge;
+  color: var(--black);
+}
+
+.wp-block {
+  margin: 0 0 1rem;
+}
+
+.wp-element-button, 
+.wp-block-button__link {
+  @include button-style;
+}
+
+body#tinymce {
+  padding: .25rem;
+}

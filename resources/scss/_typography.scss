@@ -1,0 +1,207 @@
+
+/* typography.scss */ 
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--black);
+	font-family: var(--bodycopy);
+	background-color: var(--white);
+	font-weight: var(--regular);
+	line-height: 1.5;
+}
+
+p,
+li,
+.h1, .h2, .h3, .h4,
+h1, h2, h3, h4 {
+  // Help prevent overflow of long words/names/URLs
+  overflow-wrap: break-word;
+}
+
+/* ==============================
+type, use Bulma helper classes instead of older Partisan helpers
+================================= */
+.bodycopy,
+.has-bodycopy-font-family {
+	font-family: var(--bodycopy);
+}
+
+.headline,
+.has-headline-font-family {
+	font-family: var(--headline);
+}
+
+p {
+	margin: 0 0 var(--space-sm);
+	padding: 0;
+}
+
+label,
+.label {
+	color: var(--dk-gray);
+	font-weight: var(--regular);
+	font-size: var(--font-size-sm);
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+li {
+	list-style-type: none;
+	margin-bottom: var(--space-sm);
+}
+
+ul.sublist {
+	margin: 16px 0 !important;
+}
+
+ol {
+	margin-left: var(--space-lg);
+	li {
+		list-style-type: decimal;
+	}
+}
+
+// depending on usefulness, allow bullet lists in the main block editor
+
+// .entry-content ul > li
+ul.disc li,
+ul.sublist li {
+	list-style-type: disc;
+	margin-left: var(--space-lg);
+}
+
+blockquote,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: var(--space-md);
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: var(--font-size-md);
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+p.error-text,
+div.error-text {
+	padding: var(--space-xs) var(--space-unit);
+	margin: var(--space-sm) 0;
+	background-color: red;
+	color: var(--white) !important;
+	font-size: var(--font-size-sm);
+}
+
+.bold-text,
+b,
+strong {
+	font-weight: var(--bold);
+	font-variation-settings: "wght" var(--bold); // needed for variable fonts
+	color: inherit;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+/* ## Headings */ 
+
+
+
+// h1-h6  sizing also declared in theme.json
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: var(--space-sm);
+	font-family: var(--headline);
+	font-weight: var(--bold);
+	line-height: 1.1; // letter-spacing: 1px;
+	color: var(--black);
+	text-transform: none;
+	
+	&.no-bottom {
+		margin-bottom: 0 !important;
+	}
+	&.no-border {
+		border: none !important;
+		padding-left: 0;
+	}
+}
+
+
+h1 {
+	font-size: var(--font-size-xxxl);
+}
+
+.font-size-xxxl {
+	font-size: var(--font-size-xxxl) !important;
+}
+
+h2 {
+	font-size: var(--font-size-xxl);
+}
+
+.font-size-xxl {
+	font-size: var(--font-size-xxl) !important;
+}
+
+h3 {
+	font-size: var(--font-size-xl);
+}
+
+.font-size-xl {
+	font-size: var(--font-size-xl) !important;
+}
+
+h4 {
+	font-size: var(--font-size-lg);
+}
+
+.font-size-lg {
+	font-size: var(--font-size-lg) !important;
+}
+
+h5 {
+	font-size: var(--font-size-md);
+}
+
+.font-size-md {
+	font-size: var(--font-size-md) !important;
+}
+
+h6 {
+	font-size: var(--font-size-base) !important;
+}
+
+.font-size-base {
+	font-size: var(--font-size-base) !important;
+}

@@ -1,0 +1,15 @@
+/* Carousel styles */ 
+.flicky-slider {
+  position: relative;
+}
+
+.carousel__cell {
+  width: 100vw;
+  padding-bottom: 70%;
+  @include desktop {
+    padding-bottom: 50%;
+  }
+  @include fullhd {
+    padding-bottom: 40%;
+  }
+}

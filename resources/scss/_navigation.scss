@@ -1,0 +1,254 @@
+/* ==========================================
+	Navigation - 
+============================================= */
+
+.main-navigation {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-navigation__flex-container {
+	width: 100%;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.primary-menu-wrapper {
+	display: block;
+
+	@include touch {
+		position: fixed;
+		top: 90px;
+		left: 100%;
+		width: 400px;
+		background-color: var(--bone);
+		height: auto;
+		padding: 3rem 2rem;
+		font-size: var(--font-size-base);
+		font-family: var(--headline);
+		opacity: 0;
+		transition: all 0.5s ease;
+		overflow: hidden;
+		visibility: hidden;
+		z-index: 11;
+	}
+
+	&.open {
+		left: calc(100vw - 280px);
+		opacity: 1;
+		visibility: visible;
+		z-index: 10;
+		@include box-shadow;
+	}
+
+	@include desktop {
+		background-color: transparent;
+
+	}
+
+
+}
+
+/* hamburger menu and animation */
+
+.primary-menu-trigger,
+.mobile-nav-trigger {
+	font-size: 0;
+}
+
+/* hamburger menu and animation */
+
+.primary-menu-trigger {
+	display: none;
+	@include touch {
+		display: block;
+		min-width: 40px;
+		height: 20px;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		transform: rotate(0deg);
+		transition: .3s ease-in-out;
+		cursor: pointer;
+	}
+	
+}
+
+.primary-menu-trigger span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: var(--green);
+	border-radius: 0px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+	
+}
+
+.primary-menu-trigger span:nth-child(1) {
+	top: 0px;
+}
+
+.primary-menu-trigger span:nth-child(2),
+.primary-menu-trigger span:nth-child(3) {
+	top: 8px;
+}
+
+.primary-menu-trigger span:nth-child(4) {
+	top: 16px;
+}
+
+.primary-menu-trigger.open span:nth-child(1) {
+	top: 0px;
+	width: 0%;
+	left: 50%;
+}
+
+.primary-menu-trigger.open span:nth-child(2) {
+	transform: rotate(45deg);
+}
+
+.primary-menu-trigger.open span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
+.primary-menu-trigger.open span:nth-child(4) {
+	top: 0px;
+	width: 0%;
+	left: 50%;
+}
+
+
+// desktop navigation styles
+
+ul#primary-menu {
+
+	
+
+	@include desktop {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		line-height: 1;
+		margin: 0;
+		background-color: transparent;
+		padding: 0;
+
+		font-family: var(--headline);
+		font-size: var(--font-size-base);
+		gap: 1rem;
+
+		ul {
+			float: left;
+			position: absolute;
+			top: 20px;
+			left: -999em;
+			z-index: 99999;
+
+			background-color: transparent;
+			padding: 1rem 0 0;
+			border-radius: 0 0 12px 12px;
+
+			li {
+				padding: 0 1rem 1rem;
+				margin-bottom: 0;
+				line-height: 1;
+				background-color: var(--dk-gray);
+				
+				@include link-trans;
+
+				&:first-child {
+					padding-top: 1rem;
+				}
+			}
+
+			a {
+				width: auto;
+				font-weight: var(--regular);
+				font-size: var(--font-size-sm)all;
+				text-transform: none;
+				color: var(--white);
+				border-bottom: 1px solid transparent;
+			}
+
+			&:hover > a,
+			.focus > a {
+				border-color: var(--white);
+			}
+
+			a:hover,
+			a.focus {
+				color: var(--bone);
+				border-color: var(--bone);
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		display: block;
+		margin-bottom: 1rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include desktop {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		color: var(--black);
+		font-weight: var(--bold);
+		border-bottom: 1px solid transparent;
+
+		&:hover,
+		&:focus {
+			color: var(--dk-gray);
+			border-color: var(--dk-gray);
+		}
+
+		@include desktop {
+			color: var(--black);
+			font-weight: var(--regular);
+	
+			&:hover,
+			&:focus {
+				color: var(--dk-gray);
+				border-color: var(--dk-gray);
+			}
+		}
+	}
+
+	@include touch {
+		// target submenu on smaller devices
+		ul {
+			padding: .5rem 0 .5rem 1rem;
+
+			li {
+				margin-bottom: .5rem;
+			}
+
+			a {
+				font-weight: var(--regular);
+			}
+		}
+	}
+}

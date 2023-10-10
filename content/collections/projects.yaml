@@ -1,0 +1,18 @@
+title: Projects
+template: default
+layout: layout
+mount: 2777a9ce-9c8c-4934-bfb2-8f9c44e39fa6
+revisions: false
+route: '/projects/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+structure:
+  root: true
+  slugs: true

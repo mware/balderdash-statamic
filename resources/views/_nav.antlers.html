@@ -1,0 +1,21 @@
+
+<div class="primary-menu-wrapper">
+
+  <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
+    {{ nav:collection:pages }}
+        <li class="menu-item {{ is_current || is_parent ?= 'current-menu-item' : '' }}">
+            <a href="{{ url }}">{{ title }}</a>
+        </li>
+        {{ if children }}
+            <ul class="sub-menu">
+                {{ children }}
+                <li class="menu-item {{ is_current ?= 'current-menu-item' : '' }}">
+                  <a href="{{ url }}">{{ title }}</a>
+                </li>
+                {{ /children }}
+            </ul>
+        {{ /if }}
+    {{ /nav:collection:pages}}
+  </ul>
+
+</div>

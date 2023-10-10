@@ -1,0 +1,53 @@
+/* -------------------------------
+customtheme.scss 
+you can also use Bulma helper classes rather than define redundant classes here.
+
+---------------------------------- */ 
+
+// sticky footer stuff
+html {
+	box-sizing: border-box;
+	height: 100%; //sticky footer
+	scroll-padding-top: 4rem;
+}
+
+body {
+	min-height: 100%; //sticky footer
+	position: relative;
+	display: flex; //sticky footer
+	flex-direction: column; //sticky footer
+	//@include link-trans;
+	background-color: var(--white) !important;
+}
+
+// for sticky footer, need to move site footer to after closing of #page in footer.php
+#page {
+	flex: 1 0 auto;
+}
+
+
+.sitename-section-padding {
+	padding: 60px 0;
+	@include desktop {
+		padding: 80px 0;
+	}
+	@include fullhd {
+		padding: 100px 0;
+	}
+
+	&.top-only {
+		padding-bottom: 0;
+	}
+
+	&.bottom-only {
+		padding-top: 0;
+	}
+}
+
+// image treatment
+.site-main img {
+  border-radius: 0;
+}
+
+
+

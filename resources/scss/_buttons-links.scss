@@ -1,0 +1,44 @@
+// ==========================================
+
+// Buttons & Links
+
+//==========================================
+
+a {
+	@include link-trans;
+}
+
+.site-main {
+	a {
+		position: relative;
+		color: var(--dk-gray);
+		font-weight: var(--bold);
+		text-decoration: none;
+		border-bottom: 1px solid var(--dk-gray);
+		@include link-trans;
+		
+	}
+	a:hover,
+	a:focus {
+		color: var(--gray);
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+	}
+
+	a:focus {
+		outline: 1px dotted var(--gray);
+	}
+
+	a:active {
+		text-decoration: none;
+		color: var(--bone);
+	}
+}
+
+a.button,
+a.btn,
+.site-main .button,
+input[type="submit"],
+.site-main a.wp-element-button {
+	@include button-style;
+}

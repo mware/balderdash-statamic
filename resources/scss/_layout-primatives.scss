@@ -1,0 +1,126 @@
+/*  layout primatives */ 
+
+:root {
+  --measure: 70ch;
+}
+
+* {
+  max-inline-size: var(--measure);
+}
+
+html,
+body,
+section,
+article,
+hr,
+div,
+header,
+nav,
+main,
+footer,
+button,
+span,
+ul.ab-top-menu  {
+  max-inline-size: none;
+}
+
+// utility classes based on this
+
+.max-inline-size\:measure {
+  max-inline-size: var(--measure);
+}
+
+.max-inline-size\:measure\/2 {
+  max-inline-size: calc(var(--measure) / 2);
+}
+
+.site-section-margin {
+	margin: clamp(3rem, 10vw, 6rem) 0;
+
+	&.top-only {
+		margin-bottom: 0;
+	}
+
+	&.bottom-only {
+		margin-top: 0;
+	}
+}
+
+.container {
+	padding: 0 1rem;
+	width: 100%; 
+	margin: auto;
+	max-width: var(--wp--custom--layout--content);
+	
+  &.wide {
+		max-width: var(--wp--custom--layout--wide);
+	}
+
+	&.narrow {
+		max-width: var(--wp--custom--layout--narrow);
+	}
+
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+	&.top {
+		align-items: flex-start;
+	}
+
+	&.bottom {
+		align-items: flex-end;
+	}
+
+	&.left {
+		justify-content: flex-start;
+	}
+
+	&.right {
+		justify-content: flex-end;
+	}
+	
+	&.space-between {
+		justify-content: space-between;
+	}
+
+	&.nowrap {
+		flex-wrap: nowrap;
+	}
+
+	&.wrap {
+		flex-wrap: wrap;
+	}
+
+	&.stretch {
+		align-items: stretch;
+	}
+
+	&.space-even {
+		justify-content: space-evenly;
+	}
+
+	&.flex-end {
+		justify-content: flex-end;
+	}
+}
+
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  flex-basis: 20rem;
+  flex-grow: 1;
+}
+
+.not-sidebar {
+  flex-basis: 0;
+  flex-grow: 999;
+}

@@ -24,7 +24,6 @@
   }
 }
 
-
 .banner-gradient {
   position: absolute;
   top: 0;
@@ -33,10 +32,8 @@
   right: 0;
   background: rgba(15, 15, 15, 70%);
   z-index: 2;
-  
 }
 
-// center text vertically
 .top-banner__textcontainer {
   display: flex;
   position: absolute;
@@ -53,28 +50,5 @@
   align-items: flex-start;
   & > * {
     max-inline-size: 40ch;
-  }
-}
-
-.top-banner__headline {
-  max-width: 320px;
-  line-height: 1.1;
-
-  @include tablet {
-    max-width: 400px;
-  }
-
-  @include widescreen {
-    max-width: 520px;
-  }
-}
-
-.top-banner__headline {
-  max-width: 300px;
-  @include tablet {
-    max-width: 380px;
-  }
-  @include widescreen {
-    max-width: 500px;
   }
 }

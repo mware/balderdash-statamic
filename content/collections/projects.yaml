@@ -1,9 +1,9 @@
 title: Projects
-template: default
-layout: layout
+template: '@blueprint'
+layout: default
 mount: 2777a9ce-9c8c-4934-bfb2-8f9c44e39fa6
 revisions: false
-route: '/projects/{slug}'
+date: true
 sort_dir: asc
 date_behavior:
   past: public
@@ -15,4 +15,3 @@ preview_targets:
     refresh: true
 structure:
   root: true
-  slugs: true

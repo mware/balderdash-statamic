@@ -1,0 +1,58 @@
+title: 'Hero Banner'
+fields:
+  -
+    handle: hero
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Hero
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      max_files: 1
+      min_files: 1
+  -
+    handle: hero_headline
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Hero Headline'
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: hero_bodycopy
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Hero Bodycopy'
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: hero_buttons
+    field:
+      type: button_group
+      display: 'Hero Buttons'
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

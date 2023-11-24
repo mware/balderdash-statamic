@@ -5,7 +5,12 @@ title: About
 author: 3ea65f0c-212e-4c2e-be59-b0eaf77c1b42
 template: default
 updated_by: 3ea65f0c-212e-4c2e-be59-b0eaf77c1b42
-updated_at: 1696510661
+updated_at: 1699379024
+banner_image: 42709_1600x1200-wallpaper-cb1332773573.jpg
+video_field: 'https://www.youtube.com/watch?v=s9F5fhJQo34'
+hero_banner:
+  - cloudvisual-208962.jpg
+hero: cloudvisual-208962.jpg
 ---
 Leo commodo elementum sed tristique nisl aliquam dolor dolor bibendum congue eget elementum ipsum magna morbi facilisis bibendum facilisis lacus tristique nunc proin sed accumsan metus sit a proin varius rutrum adipiscing orci sed quisque tempus.
 

@@ -1,8 +1,14 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: Home
+template: home
+banner_image: 42696_1600x1200-wallpaper-cb1320066431.jpg
+updated_by: 3ea65f0c-212e-4c2e-be59-b0eaf77c1b42
+updated_at: 1700838483
+hero: 38220_1600x1200-wallpaper-cb1322759775.jpg
+hero_headline: 'Balderdash Startkit'
+hero_bodycopy: 'A basic Statamic starterkit with hero images and a custom page builder so that you can start building a site in minutes'
 ---
 ## Welcome to your brand new Statamic site!
 

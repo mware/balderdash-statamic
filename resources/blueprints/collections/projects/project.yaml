@@ -1,4 +1,3 @@
-title: Project
 tabs:
   main:
     display: Main
@@ -13,104 +12,7 @@ tabs:
               validate:
                 - required
           -
-            handle: author
-            field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
-          -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
-          -
-            handle: client_name
-            field:
-              input_type: text
-              placeholder: ACME
-              character_limit: 120
-              antlers: true
-              type: text
-              display: 'Client Name'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: project_url
-            field:
-              type: link
-              display: 'Project URL'
-              icon: link
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: collaborators
-            field:
-              collapse: false
-              previews: true
-              max_sets: 4
-              fullscreen: true
-              sets:
-                new_set_group:
-                  display: 'New Set Group'
-                  instructions: null
-                  icon: null
-                  sets:
-                    new_set:
-                      display: 'New Set'
-                      instructions: null
-                      icon: null
-                      fields:
-                        -
-                          handle: collaborator_name
-                          field:
-                            input_type: text
-                            placeholder: 'Jane Doe or ACME Design'
-                            antlers: false
-                            type: text
-                            display: 'Collaborator Name'
-                            icon: text
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
-                            replicator_preview: true
-                            hide_display: false
-                        -
-                          handle: collaborator_link
-                          field:
-                            type: link
-                            display: 'Collaborator Link'
-                            icon: link
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
-                            replicator_preview: true
-                            duplicate: false
-                            hide_display: false
-              type: replicator
-              display: Collaborators
-              icon: replicator
-              instructions: 'Add project collaborators'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: content
-            field:
-              type: markdown
-              display: Content
-              localizable: true
+            import: balderdash_custom_fields
   sidebar:
     display: Sidebar
     sections:
@@ -122,6 +24,14 @@ tabs:
               type: slug
               localizable: true
           -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
             handle: parent
             field:
               type: entries
@@ -130,3 +40,4 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+title: Project

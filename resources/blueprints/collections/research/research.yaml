@@ -53,9 +53,7 @@ tabs:
                       icon: null
                       fields:
                         -
-                          import: three_column_row
-                        -
-                          import: balderdash_custom_fields
+                          import: card_group
               always_show_set_button: false
               collapse: false
               previews: true

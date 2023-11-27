@@ -13,12 +13,7 @@ tabs:
               validate:
                 - required
           -
-            handle: content
-            field:
-              type: markdown
-              localizable: true
-          -
-            import: balderdash_custom_fields
+            import: page_builder
   sidebar:
     display: Sidebar
     sections:

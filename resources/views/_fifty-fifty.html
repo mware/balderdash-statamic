@@ -1,0 +1,39 @@
+<!-- 
+
+
+fifty_buttons
+
+add_margin_below_section
+vertically_center_content 
+-->
+
+<section  class="balderdash-section-padding" {{ if background_color }} style="background-color: {{ background+color }};" {{ /if }}>
+
+    <div class="fifty-fifty-row container px-base {{ if image_on_the_right }} layout-image-right {{ /if }} {{if vertically_center_content  }} center-content {{ /if }} {{ if add_margin_below_section }} {{ add_margin_below_section }} {{ /if }}">
+
+      <div class="fifty-fifty-row-column first-row-column fifty-fifty-row-column__image-column">
+          {{ if fifty_fifty_image }}
+          <img src="{{ fifty_fifty_image:url}}" alt="{{ fifty_fifty_image:alt }}">
+          {{ /if }}
+      </div><!-- fifty-fifty-row-column -->
+
+      <div class="fifty-fifty-row-column second-row-column fifty-fifty-row-column__text-column">
+        {{ if fifty_headline}}
+           <h2 class="font-size-lg mb-base">{{ fifty_headline }}</h2>
+        {{ /if }}
+
+        {{ if fifty_bodycopy}}
+           <div class="mb-base">{{ fifty_bodycopy }}</div>
+        {{ /if}}
+
+        {{ if fifty_buttons }}
+          <div class="button-group">
+            {{ fifty_buttons }}
+          </div>
+        {{ /if }}
+
+      </div><!-- fifty-fifty-row-column -->
+
+    </div><!-- /fifty-fifty-row -->
+    
+</section>

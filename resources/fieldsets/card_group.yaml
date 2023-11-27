@@ -1,4 +1,4 @@
-title: 'Three Card Row'
+title: 'Card Group'
 fields:
   -
     handle: card_image
@@ -35,11 +35,11 @@ fields:
       replicator_preview: true
       hide_display: false
   -
-    handle: card_copy
+    handle: card_bodycopy
     field:
       antlers: false
       type: textarea
-      display: 'Card Copy'
+      display: 'Card Bodycopy'
       icon: textarea
       listable: hidden
       instructions_position: above

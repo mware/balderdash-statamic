@@ -1,0 +1,113 @@
+title: 'Fifty Fifty'
+fields:
+  -
+    handle: background_color
+    field:
+      allow_any: true
+      type: color
+      display: 'Background Color'
+      icon: color
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: fifty_fifty_image
+    field:
+      max_files: 1
+      min_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: 'Fifty Fifty Image'
+      icon: assets
+      instructions: 'Add a square image. Make sure the focus of the image is near the center.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      validate:
+        - required
+        - image
+        - 'dimensions:min_width=1000,min_height=1000'
+  -
+    handle: fifty_headline
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'Fifty Headline'
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: fifty_bodycopy
+    field:
+      antlers: false
+      type: textarea
+      display: 'Fifty Bodycopy'
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: fifty_buttons
+    field:
+      type: button_group
+      display: 'Fifty Buttons'
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: image_on_the_right
+    field:
+      default: false
+      type: toggle
+      display: 'Image on the Right?'
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: add_margin_below_section
+    field:
+      options:
+        1: 1rem
+        2: 2rem
+        3: 3rem
+        4: 4rem
+        5: 5rem
+        6: 6rem
+        8: 8rem
+        10: 10rem
+      taggable: true
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      type: select
+      display: 'Add Margin Below Section'
+      icon: select
+      instructions: 'In some cases, you might want some distance from the section below.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

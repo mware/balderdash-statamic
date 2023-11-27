@@ -11,8 +11,6 @@ tabs:
               required: true
               validate:
                 - required
-          -
-            import: balderdash_custom_fields
   sidebar:
     display: Sidebar
     sections:

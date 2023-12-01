@@ -5,7 +5,7 @@ title: About
 author: 3ea65f0c-212e-4c2e-be59-b0eaf77c1b42
 template: default
 updated_by: 3ea65f0c-212e-4c2e-be59-b0eaf77c1b42
-updated_at: 1701455080
+updated_at: 1701459838
 banner_image: 42709_1600x1200-wallpaper-cb1332773573.jpg
 video_field: 'https://www.youtube.com/watch?v=s9F5fhJQo34'
 hero_banner:
@@ -16,7 +16,7 @@ hero_bodycopy: 'Sed elementum varius sem vel placerat diam et nec dolor sit vel 
 page_builder:
   -
     id: lpmyej33
-    background_color: '#a1f705'
+    background_color: '#70cb8b'
     fifty_fifty_image: cloudvisual-208962.jpg
     fifty_headline: 'I Have Fifty Dollars'
     fifty_bodycopy: |-
@@ -26,6 +26,8 @@ page_builder:
     image_on_the_right: false
     type: fifty_fifty
     enabled: true
+    add_margin_below_section: mb-xxl
+    vertically_center_content: true
 ---
 Leo commodo elementum sed tristique nisl aliquam dolor dolor bibendum congue eget elementum ipsum magna morbi facilisis bibendum facilisis lacus tristique nunc proin sed accumsan metus sit a proin varius rutrum adipiscing orci sed quisque tempus.
 

@@ -1,16 +1,14 @@
 <!-- 
-
+BECAUSE THIS IS REFFERENCED INSIDE the page_builder loop, the data is already available. 
 These fields have not been accounted for:
 fifty_buttons
-add_margin_below_section
-vertically_center_content 
+
 -->
 
 
-<h1>pigs in shit</h1>
-<section  class="balderdash-section-padding" {{ if background_color }} style="background-color: {{ background_color }} ;" {{ /if }}>
+<section  class="balderdash-section-padding {{ if add_margin_below_section }} {{ add_margin_below_section }} {{ /if }}" {{ if background_color }} style="background-color: {{ background_color }};" {{ /if }} >
 
-    <div class="fifty-fifty-row container px-base {{ if image_on_the_right }} layout-image-right {{ /if }} {{if vertically_center_content  }} center-content {{ /if }} {{ if add_margin_below_section }} {{ add_margin_below_section }} {{ /if }}">
+    <div class="fifty-fifty-row  {{ if image_on_the_right }} layout-image-right {{ /if }} {{if vertically_center_content  }} center-content {{ /if }}">
 
       <div class="fifty-fifty-row-column first-row-column fifty-fifty-row-column__image-column">
           {{ if fifty_fifty_image }}

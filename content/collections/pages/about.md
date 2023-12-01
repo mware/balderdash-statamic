@@ -5,25 +5,26 @@ title: About
 author: 3ea65f0c-212e-4c2e-be59-b0eaf77c1b42
 template: default
 updated_by: 3ea65f0c-212e-4c2e-be59-b0eaf77c1b42
-updated_at: 1701029584
+updated_at: 1701455080
 banner_image: 42709_1600x1200-wallpaper-cb1332773573.jpg
 video_field: 'https://www.youtube.com/watch?v=s9F5fhJQo34'
 hero_banner:
   - cloudvisual-208962.jpg
-hero: cloudvisual-208962.jpg
-page_builder_replicator:
+hero: david-kovalenko-414249.jpg
+hero_headline: 'I forgot to add a headline here'
+hero_bodycopy: 'Sed elementum varius sem vel placerat diam et nec dolor sit vel maximus varius eu eget purus a sem proin et facilisis sem vel vel.  Sed erat phasellus consectetur amet nunc ipsum hendrerit orci tincidunt.'
+page_builder:
   -
-    id: lpfx28k2
-    background_color: '#660bd1'
+    id: lpmyej33
+    background_color: '#a1f705'
     fifty_fifty_image: cloudvisual-208962.jpg
-    fifty_headline: 'I love Pie'
+    fifty_headline: 'I Have Fifty Dollars'
     fifty_bodycopy: |-
-      Tincidunt nisl quam et varius vivamus nunc magna a a maximus arcu rutrum rutrum nulla cursus eget congue arcu facilisis quam ut quam nisi id.
+      Sed elementum varius sem vel placerat diam et nec dolor sit vel maximus varius eu eget purus a sem proin et facilisis sem vel vel.
 
-      Cursus morbi euismod vivamus orci tempus rutrum molestie facilisis aliquam eu quisque molestie condimentum elementum quam sem commodo lacus tempus sed bibendum portaest urna nisl.
-    image_on_the_right: true
-    add_margin_below_section: '5'
-    type: fifty_fifty_section
+      Sed erat phasellus consectetur amet nunc ipsum hendrerit orci tincidunt erat maximus maecenas leo arcu tempus nisi felis id tempus tempus nec tristique interdum interdum.
+    image_on_the_right: false
+    type: fifty_fifty
     enabled: true
 ---
 Leo commodo elementum sed tristique nisl aliquam dolor dolor bibendum congue eget elementum ipsum magna morbi facilisis bibendum facilisis lacus tristique nunc proin sed accumsan metus sit a proin varius rutrum adipiscing orci sed quisque tempus.

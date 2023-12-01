@@ -1,4 +1,4 @@
-title: 'Fifty Fifty'
+title: 'Fifty Fifty is a set of fields that will create a full-width row with an image to one side and content on the other.'
 fields:
   -
     handle: background_color
@@ -56,17 +56,6 @@ fields:
       type: textarea
       display: 'Fifty Bodycopy'
       icon: textarea
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      replicator_preview: true
-      hide_display: false
-  -
-    handle: fifty_buttons
-    field:
-      type: button_group
-      display: 'Fifty Buttons'
-      icon: button_group
       listable: hidden
       instructions_position: above
       visibility: visible

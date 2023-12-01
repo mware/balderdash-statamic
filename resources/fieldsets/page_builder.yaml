@@ -1,7 +1,7 @@
 title: 'Page Builder'
 fields:
   -
-    handle: page_builder_replicator
+    handle: page_builder
     field:
       collapse: false
       previews: true
@@ -12,8 +12,8 @@ fields:
           instructions: null
           icon: null
           sets:
-            fifty_fifty_section:
-              display: 'Fifty Fifty Section'
+            fifty_fifty:
+              display: 'Fifty Fifty'
               instructions: null
               icon: null
               fields:
@@ -27,7 +27,7 @@ fields:
                 -
                   import: card_group
       type: replicator
-      display: 'Page Builder Replicator'
+      display: 'Page Builder'
       icon: replicator
       listable: hidden
       instructions_position: above

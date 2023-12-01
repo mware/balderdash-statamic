@@ -1,3 +1,7 @@
+{{ partial:hero }}
+
 <h1>{{ title }} </h1>
 
-{{ content }}
+{{ page_builder }}
+  {{ partial src="page_builder/{type}" }}
+{{ /page_builder }}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? site:name }}</title>
+        {{ vite src="resources/js/site.js|resources/css/site.css" }}
+    </head>
+    <body class="body__default">
+
+        
+
+        <a class="skip-link screen-reader-text" href="#primary">Skip to main content</a>
+
+        <header id="masthead" class="site-header">
+			<div class="container wide">
+				<nav id="site-navigation" class="main-navigation"  aria-label="main-navigation">
+					
+						<a href="/" class="site-logo">
+                            <img src="{{ header:site_logo }}" alt="{{ header:site_logo.alt }}" />
+                        </a>
+
+						<button  id="primary-menu-trigger" class="primary-menu-trigger nav-icon3 navbar-buttons open-menu menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+
+                        {{ partial:nav }}
+
+						
+				</nav><!-- #site-navigation -->
+			</div><!--/container--> 
+
+		</header><!-- #masthead -->
+        <main id="primary" class="main__default">
+            {{ template_content }}
+        </div>
+    </body>
+</html>

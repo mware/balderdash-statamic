@@ -1,0 +1,9 @@
+{
+    "name": "my-vendor-name/balderdash-statamic",
+    "extra": {
+        "statamic": {
+            "name": "Balderdash Statamic",
+            "description": "Balderdash Statamic starter kit"
+        }
+    }
+}

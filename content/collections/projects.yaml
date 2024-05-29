@@ -1,0 +1,17 @@
+title: Projects
+template: '@blueprint'
+layout: default
+mount: 2777a9ce-9c8c-4934-bfb2-8f9c44e39fa6
+revisions: false
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+structure:
+  root: true

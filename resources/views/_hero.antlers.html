@@ -1,0 +1,41 @@
+{{ hero }}
+
+<section class="hero-section">
+  
+
+  <div class="banner-gradient"></div>
+
+  <div class="fullwidth-banner">
+      <style>
+          .fullwidth-banner {
+              background-image: url({{ hero:url }});
+              background-position: center center;
+              background-size: cover;
+          }
+      </style>
+  </div>
+
+  {{ if hero_headline }}  
+    <div class="top-banner__textcontainer">
+        <div class="top-banner__textcontainer--inner container wide">
+            
+            <h1 class="top-banner__headline has-white-color">
+              {{ hero_headline }}
+            </h1>
+            
+            {{ if hero_bodycopy }}
+              <h2 class="font-size-lg has-white-color">
+                {{ hero_bodycopy }}
+              </h2>
+            {{ /if }}
+
+            {{# button stuff goes here #}}
+        </div>
+        <!-- top-banner__textcontainer--inner -->
+    </div>
+
+  {{ /if }} 
+</section>
+
+
+{{ /hero }}

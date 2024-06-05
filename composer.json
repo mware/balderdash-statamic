@@ -1,5 +1,5 @@
 {
-    "name": "my-vendor-name/balderdash-statamic",
+    "name": "mware/balderdash-statamic",
     "extra": {
         "statamic": {
             "name": "Balderdash Statamic",

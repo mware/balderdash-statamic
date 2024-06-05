@@ -2,7 +2,7 @@
 
 ## About This Theme
 
-This Statamic starter kit is a work in progress. The CSS has been refined over years, used as the basis for my WordPress starter theme Balderdash. It does not use Tailwind, nor any other CSS framework. What sprinkly of JS is vanilla. My hope is to develop more fieldsets and blueprints that are commonly used for site layouts, then use them as page builder elements a la <a href="https://statamic.com/starter-kits/studio1902/peak">Peak</a>. 
+This Statamic starter kit is a work in progress. The CSS has been refined over years, used as the basis for my WordPress starter theme Balderdash. It does not use Tailwind, nor any other CSS framework, but does include Alpine.js. My hope is to develop more fieldsets and blueprints that are commonly used for site layouts, then use them as page builder elements a la <a href="https://statamic.com/starter-kits/studio1902/peak">Peak</a>. 
 
 ## About Statamic
 
